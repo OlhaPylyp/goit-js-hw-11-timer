@@ -14,7 +14,9 @@ class CountdownTimer {
   constructor({ selector, targetDate, intervalId=null }) {
    this.selector = selector;
    this.targetDate = targetDate;
-   this.intervalId = intervalId;
+    this.intervalId = intervalId;
+    this.deltaTimer();
+    this.start();
   } 
   selector() { 
    this.selector= refs.timer}
@@ -59,6 +61,6 @@ const sec = this.pad(Math.floor((time % (1000 * 60)) / 1000));
   });
 
 
-timerRev.deltaTimer() 
-timerRev.start()
+
+
 
